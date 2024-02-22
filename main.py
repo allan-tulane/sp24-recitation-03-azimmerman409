@@ -68,14 +68,21 @@ def _quadratic_multiply(x, y):
   
 
 
-    
-    
-def test_quadratic_multiply(x, y, f):
+def test_quadratic_multiply():
     start = time.time()
-    print(f(BinaryNumber(x),BinaryNumber(y)));
+    # Multiply two numbers using function _quadratic_multiply
+    result1 = _quadratic_multiply(BinaryNumber(15), BinaryNumber(3))
+    result2 = _quadratic_multiply(BinaryNumber(9), BinaryNumber(4))
+
     
-    
-    return (time.time() - start)*1000
+    runtime = (time.time() - start) * 1000
+
+
+    print("Result 1:", result1)
+    print("Result 2:", result2)
+    print("Runtime:", runtime, "milliseconds")
+
+test_quadratic_multiply()
 
 
     
