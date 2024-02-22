@@ -77,6 +77,8 @@ def test_quadratic_multiply(x, y, f):
   print(result)
   
   return (time.time() - start) * 1000
+    
+print(test_quadratic_multiply(4,8,quadratic_multiply))
 
 
     
